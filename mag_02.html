@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> MonkeyApproved </title>
+	<link href='mag_02.css' rel='stylesheet'>
+	
+</head>
+
+<body>
+
+<svg id='svgCollection' viewBox='0 0 100 100'>
+	<defs>
+		<clipPath id="clipCircle">
+			<circle r='50' cx='50' cy='50'/>
+		</clipPath>
+	</defs>
+	<g id='cpSelect1'>
+		<circle fill='#DDDDFF' stroke='#0000AA' stroke-width='5' r='52.5' cx='50' cy='50'/>
+		<path fill='none' stroke='#777' stroke-width='5' clip-path='url(#clipCircle)' d='M-20 70Q 20 20 50 50 Q 80 80 120 30'/>
+		<circle fill='none' stroke='blue' stroke-width='3' cx='23' cy='23' r='8'/>
+		<circle fill='none' stroke='blue' stroke-width='3' cx='77' cy='77' r='8'/>
+		<path fill='#222' stroke='none' d='M50 62L62 50L50 38L38 50Z'/>
+		<path fill='none' stroke='blue' stroke-width='5' d='M22 22L78 78'/>
+	</g>
+	<g id='cpSelect2'>
+		<circle fill='#DDDDFF' stroke='#0000AA' stroke-width='5' r='52.5' cx='50' cy='50'/>
+		<path fill='none' stroke='#777' stroke-width='5' clip-path='url(#clipCircle)' d='M-20 70Q 20 20 50 50 Q 65 65 120 10'/>
+		<circle fill='none' stroke='blue' stroke-width='3' cx='21' cy='21' r='8'/>
+		<circle fill='none' stroke='blue' stroke-width='3' cx='67' cy='67' r='8'/>
+		<path fill='#222' stroke='none' d='M50 62L62 50L50 38L38 50Z'/>
+		<path fill='none' stroke='blue' stroke-width='5' d='M20 20L68 68'/>
+	</g>
+	<g id='cpSelect3'>
+		<circle fill='#DDDDFF' stroke='#0000AA' stroke-width='5' r='52.5' cx='50' cy='50'/>
+		<path fill='none' stroke='#777' stroke-width='5' clip-path='url(#clipCircle)' d='M-20 70Q 20 20 50 50 Q 45 20 120 70'/>
+		<circle fill='none' stroke='blue' stroke-width='3' cx='21' cy='21' r='8'/>
+		<circle fill='none' stroke='blue' stroke-width='3' cx='45' cy='20' r='8'/>
+		<path fill='#222' stroke='none' d='M50 62L62 50L50 38L38 50Z'/>
+		<path fill='none' stroke='blue' stroke-width='5' stroke-linejoin="bevel" d='M20 20L50 50L44.8 18.8'/>
+	</g>
+	<g id='pathSelect1'>
+		<circle fill='#FFDDDD' stroke='#AA0000' stroke-width='5' r='52.5' cx='50' cy='50'/>
+		<path fill='#222' stroke='none' d='M12 72L24 60L12 48L0 60Z'/>
+		<path fill='#222' stroke='none' d='M88 52L76 40L88 28L100 40Z'/>
+	</g>
+	<g id='pathSelect2'>
+		<circle fill='#FFDDDD' stroke='#AA0000' stroke-width='5' r='52.5' cx='50' cy='50'/>
+		<path fill='none' stroke='#C00000' stroke-width='7' d='M12 60L88 40'/>
+		<path fill='#222' stroke='none' d='M12 72L24 60L12 48L0 60Z'/>
+		<path fill='#222' stroke='none' d='M88 52L76 40L88 28L100 40Z'/>
+	</g>
+	<g id='pathSelect3'>
+		<circle fill='#FFDDDD' stroke='#AA0000' stroke-width='5' r='52.5' cx='50' cy='50'/>
+		<circle fill='none' stroke='#777' stroke-width='3' cx='57' cy='15' r='8'/>
+		<path fill='none' stroke='#777' stroke-width='3' d='M12 60L57 15L88 40'/>
+		<path fill='none' stroke='#C00000' stroke-width='7' d='M12 60Q57 15 88 40'/>
+		<path fill='#222' stroke='none' d='M12 72L24 60L12 48L0 60Z'/>
+		<path fill='#222' stroke='none' d='M88 52L76 40L88 28L100 40Z'/>
+	</g>
+	<g id='pathSelect4'>
+		<circle fill='#FFDDDD' stroke='#AA0000' stroke-width='5' r='52.5' cx='50' cy='50'/>
+		<circle fill='none' stroke='#777' stroke-width='3' cx='57' cy='15' r='8'/>
+		<circle fill='none' stroke='#777' stroke-width='3' cx='68' cy='80' r='8'/>
+		<path fill='none' stroke='#777' stroke-width='3' d='M12 60L58 14M67.5 81L88 40'/>
+		<path fill='none' stroke='#C00000' stroke-width='7' d='M12 60C82 -10 48 110 88 40'/>
+		<path fill='#222' stroke='none' d='M12 72L24 60L12 48L0 60Z'/>
+		<path fill='#222' stroke='none' d='M88 52L76 40L88 28L100 40Z'/>
+	</g>
+</svg>
+
+
+<div class='trippleChoice' id='test007'>
+	<button class='selected'>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#cpSelect1"/>
+		</svg>
+	</button>
+	
+	<div class='choices'>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#cpSelect1"/>
+		</svg>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#cpSelect2"/>
+		</svg>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#cpSelect3"/>
+		</svg>
+	</div>
+	
+</div>
+
+<div class='quadChoice' id='test008'>
+	<button class='selected'>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#pathSelect1"/>
+		</svg>
+	</button>
+	
+	<div class='choices'>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#pathSelect1"/>
+		</svg>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#pathSelect2"/>
+		</svg>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#pathSelect3"/>
+		</svg>
+		<svg viewBox='0 0 100 100'>
+			<use xlink:href="#pathSelect4"/>
+		</svg>
+	</div>
+	
+</div>
+
+<script src="mag_02.js"></script>
+</body>
+
+
+
+</html>
